@@ -1,7 +1,6 @@
 ﻿using System;
-using NUnit.Framework;
-
-namespace StacksAndQueues
+using DataStructures.Exceptions;
+namespace DataStructures
 {
     /// <summary>
     /// FIFO
@@ -11,7 +10,7 @@ namespace StacksAndQueues
     /// 
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    internal class Queue<T>
+    public class Queue<T>
     {
         class QueueNode
         {
@@ -28,7 +27,7 @@ namespace StacksAndQueues
         {
         }
 
-        internal bool IsEmpty
+        public bool IsEmpty
         {
             get
             {
@@ -36,7 +35,7 @@ namespace StacksAndQueues
             }   
         }
 
-        internal T Remove()
+        public T Remove()
         {
             if (IsEmpty)
             {
@@ -47,7 +46,7 @@ namespace StacksAndQueues
             return value;
         }
 
-        internal T Peek()
+        public T Peek()
         {
             if (IsEmpty) {
                 throw new EmptyQueueException();
@@ -55,7 +54,7 @@ namespace StacksAndQueues
             return front.Value;
         }
 
-        internal void Add(T item)
+        public void Add(T item)
         {
             if (IsEmpty)
             {

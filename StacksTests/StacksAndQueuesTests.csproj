@@ -43,19 +43,22 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmptyQueueException.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Queue.cs" />
     <Compile Include="QueueTests.cs" />
-    <Compile Include="StackEmptyException.cs" />
-    <Compile Include="Stack.cs" />
     <Compile Include="StackTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{0d7540bd-7a9a-462f-bf41-5dabed956ed0}</Project>
+      <Name>DataStructures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

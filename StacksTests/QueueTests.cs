@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
-
+using DataStructures;
+using DataStructures.Exceptions;
 namespace StacksAndQueues
 {
     [TestFixture]

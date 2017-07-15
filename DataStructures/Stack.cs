@@ -1,4 +1,5 @@
-﻿namespace StacksAndQueues
+﻿using DataStructures.Exceptions;
+namespace DataStructures
 {
     /// <summary>
     /// LIFO
@@ -8,7 +9,7 @@
     /// 
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    internal class Stack<T>
+    public class Stack<T>
     {
         class StackNode
         {
@@ -25,12 +26,12 @@
         {
         }
 
-        internal bool IsEmpty()
+        public bool IsEmpty()
         {
             return top == null;
         }
 
-        internal T Peek()
+        public T Peek()
         {
             if (IsEmpty())
             {
@@ -39,7 +40,7 @@
             return top.Value;
         }
 
-        internal T Pop()
+        public T Pop()
         {
             if (IsEmpty())
             {
@@ -50,7 +51,7 @@
             return result.Value;
         }
 
-        internal void Push(T item)
+        public void Push(T item)
         {
             top = new StackNode(item, top);
         }
