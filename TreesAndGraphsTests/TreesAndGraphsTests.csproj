@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02A72FC7-AD1E-4D2B-BE42-77A101F58E51}</ProjectGuid>
+    <ProjectGuid>{F4BB25CB-3744-4BC4-9A9D-1D762C61BB3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StacksAndQueues</RootNamespace>
-    <AssemblyName>StacksAndQueues</AssemblyName>
+    <RootNamespace>TreesAndGraphsTests</RootNamespace>
+    <AssemblyName>TreesAndGraphsTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -38,19 +38,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+    <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Item.cs" />
-    <Compile Include="Problem_3_4Tests.cs" />
-    <Compile Include="QueueTests.cs" />
-    <Compile Include="Problem_3_1.cs" />
-    <Compile Include="StackTests.cs" />
+    <Compile Include="InOrderTraversalTests.cs" />
+    <Compile Include="PostOrderTraversalTests.cs" />
+    <Compile Include="PreOrderTraversalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

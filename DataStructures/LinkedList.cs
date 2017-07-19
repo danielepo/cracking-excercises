@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DataStructures
+﻿namespace DataStructures
 {
     /// <summary>
     /// Represents a sequence of nodes
@@ -132,5 +130,6 @@ namespace DataStructures
             }
             return null;
         }
+
     }
 }

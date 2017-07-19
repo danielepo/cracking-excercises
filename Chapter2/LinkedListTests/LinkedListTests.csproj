@@ -39,7 +39,7 @@
   <ItemGroup>
     <Compile Include="Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinglyLinkedListTests - Copy.cs" />
+    <Compile Include="Problem_2_1.cs" />
     <Compile Include="SinglyLinkedListTests.cs" />
   </ItemGroup>
   <ItemGroup>
